@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Codelatte adalah blog yang menyediakan beragam artikel dan tutorial menarik dan mudah dipahami tentang pemrograman website." />
+    <meta name="keywords" content="jasa penetration testing, penetration testing, vulnerability assessment, jasa vulnerability assessment, jasa pentest, pentester, jasa pembuatan website" />
+    <meta name="author" content="Codelatte" />
+    <link rel="shortcut icon" href="img/codelatte.png">
+    <title>Codelatte | Turning Coffee into Lines of Stunning Code</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="big-wrapper light">
+        <!-- Header -->
+        <header>
+          <div class="container">
+            <div class="logo">
+              <img src="./img/codelatte.png" alt="Logo" />
+              <h3><span class="text-primary">Code</span>latte</h3>
+            </div>
+
+            <div class="links">
+              <ul>
+                <li><a onclick="about();" id="top">About</a></li>
+                <li><a onclick="service();">Service</a></li>
+                <li><a onclick="client();">Client</a></li>
+                <li><a href="https://wa.me/6281357188952" target="_blank" class="btn">Contact Me</a></li>
+              </ul>
+            </div>
+
+            <div class="overlay"></div>
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </header>
+        <!-- About -->
+        <div class="showcase-area" id="about">
+          <div class="container">
+            <div class="left">
+              <div class="big-title" id="title">
+                <h1><span class="text-primary">Code</span>latte</h1>
+              </div>
+              <p class="text" id="desc">
+                Talent dengan beragam kemampuan unik akan 
+                membantu menyelesaikan project Web Development 
+                dan Penetration Testing yang anda butuhkan.
+              </p>
+              <div class="cta">
+                <a href="https://wa.me/6281357188952" target="_blank" class="btn">Contact Me</a>
+              </div>
+            </div>
+            <div class="right">
+              <img src="./img/codelatte.png" alt="Codelatte Logo" class="codelatte" />
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-area">
+          <div class="container">
+            <button class="toggle-btn">
+              <i class="far fa-moon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- JavaScript Files -->
+    <script>
+
+      function about() {
+          document.getElementById("title").innerHTML = "<h1><span class='text-primary'>Code</span>latte</h1>";
+          document.getElementById("desc").innerHTML = "Talent dengan beragam kemampuan unik akan membantu menyelesaikan project Web Development dan Penetration Testing yang anda butuhkan";
+      }
+      function service() {
+          document.getElementById("title").innerHTML = "<h1><span class='text-primary'>Ser</span>vice</h1>";
+          document.getElementById("desc").innerHTML = "<div class='menu-container'><div class='box'><h3><i class='far fa-sun'></i>&nbsp;Penetration Test</h3></div><div class='box'><h3><i class='far fa-sun'></i>&nbsp;Web Design</h3></div><div class='box'><h3><i class='far fa-sun'></i>&nbsp;Consultation</h3></div><div class='box'><h3><i class='far fa-sun'></i>&nbsp;Installation</h3></div></div>";
+      }
+      function client() {
+          document.getElementById("title").innerHTML = "<h1><span class='text-primary'>Cli</span>ent</h1>";
+          document.getElementById("desc").innerHTML = "<div class='menu-container'><div class='box'><img src='img/domainesia.png'></div><div class='box'><img src='img/igrow.png'></div><div class='box'><img src='img/tokocrypto.png'></div><div class='box'><img src='img/telkomsel.png'></div><div class='box'><img src='img/tempo.png'></div><div class='box'><img src='img/tirto.png'></div></div>";
+      }
+      document.getElementById("top").click();
+
+    </script>
+
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/js/all.js"></script>
+  </body>
+</html>
